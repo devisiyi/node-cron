@@ -10,6 +10,7 @@ const job = new CronJob({
 
 		if (!isRunning) {
 			isRunning = true;
+			isJumping = false;
 
 			setTimeout(function() {
 				console.log('Long running onTick complete:', new Date());
